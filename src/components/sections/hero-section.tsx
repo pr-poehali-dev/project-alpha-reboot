@@ -92,7 +92,7 @@ export function HeroSection() {
           </ScrollReveal>
 
           <ScrollReveal delay={0.3}>
-            <SpotlightCard className="relative h-[450px] w-full overflow-hidden rounded-xl border glassmorphic-card p-1 border-glow-red">
+            <SpotlightCard className="relative h-[450px] w-full overflow-hidden rounded-xl border glassmorphic-card p-1 border-glow-blue">
               <div className="absolute inset-0 bg-gradient-to-br from-[#0f2f80]/30 via-transparent to-gray-900/30 z-10"></div>
               <motion.img
                 src="https://cdn.poehali.dev/projects/e14c72be-1f04-4116-9166-c4a6faef194f/bucket/e386a805-c77d-4b58-86e1-98bc0a3f13bb.png"

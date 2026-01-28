@@ -43,7 +43,7 @@ export function ComponentLibraryShowcase() {
             <Tabs defaultValue={activeTab} onValueChange={setActiveTab} className="w-full">
               <div className="flex justify-center mb-12">
                 <AnimatedGradientBorder
-                  colors={["#dc2626", "#4b5563", "#dc2626", "#4b5563"]}
+                  colors={["#286CFF", "#4b5563", "#286CFF", "#4b5563"]}
                   borderWidth={1}
                   duration={8}
                   containerClassName="rounded-full"
@@ -73,7 +73,7 @@ export function ComponentLibraryShowcase() {
                         description="Новые виды оружия и улучшенная баллистика для реалистичных сражений."
                         tags={["Оружие", "Экшен"]}
                         variant="default"
-                        className="border-glow-red"
+                        className="border-glow-blue"
                       />
                     </ScrollAnimation>
 
@@ -161,7 +161,7 @@ export function ComponentLibraryShowcase() {
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <ScrollAnimation type="slide" direction="left" delay={0.1}>
-                      <div className="p-6 rounded-xl border glassmorphic-card border-glow-red">
+                      <div className="p-6 rounded-xl border glassmorphic-card border-glow-blue">
                         <h4 className="text-lg font-medium mb-6">Основные и вторичные</h4>
                         <div className="flex flex-wrap gap-6">
                           <StaggerContainer>
@@ -272,7 +272,7 @@ export function ComponentLibraryShowcase() {
                         showPercentage
                         variant="default"
                         icon={<Icon name="Layers" size={24} />}
-                        className="border-glow-red"
+                        className="border-glow-blue"
                       />
                     </ScrollAnimation>
 

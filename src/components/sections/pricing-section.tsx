@@ -79,9 +79,9 @@ export function PricingSection() {
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
           {plans.map((plan, index) => (
             <ScrollReveal key={index} delay={index * 0.1}>
-              <Card className={`h-full flex flex-col glassmorphic-card ${plan.popular ? "border-glow-red" : ""}`}>
+              <Card className={`h-full flex flex-col glassmorphic-card ${plan.popular ? "border-glow-blue" : ""}`}>
                 {plan.popular && (
-                  <div className="absolute top-0 right-0 -mt-2 -mr-2 px-3 py-1 bg-red-500 text-white text-xs font-medium rounded-full">
+                  <div className="absolute top-0 right-0 -mt-2 -mr-2 px-3 py-1 bg-[#286CFF] text-white text-xs font-medium rounded-full">
                     Хит
                   </div>
                 )}
@@ -105,7 +105,7 @@ export function PricingSection() {
 
                   {plan.popular ? (
                     <AnimatedGradientBorder
-                      colors={["#dc2626", "#4b5563", "#dc2626", "#4b5563"]}
+                      colors={["#286CFF", "#4b5563", "#286CFF", "#4b5563"]}
                       borderWidth={1}
                       duration={8}
                     >

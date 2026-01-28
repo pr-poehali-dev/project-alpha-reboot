@@ -16,7 +16,7 @@ interface MouseGlowProps {
 }
 
 export function MouseGlow({
-  color = "rgba(220, 38, 38, 0.15)",
+  color = "rgba(40, 108, 255, 0.15)",
   size = 400,
   blur = 100,
   opacity = 0.5,

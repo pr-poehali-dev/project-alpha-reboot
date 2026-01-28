@@ -15,7 +15,7 @@ export function FeaturesSection() {
       title: "Арсенал оружия",
       description: "Более 50 видов оружия от пистолетов до снайперских винтовок. Найди свой стиль боя.",
       progress: 100,
-      borderClass: "border-glow-red",
+      borderClass: "border-glow-blue",
     },
     {
       icon: <Icon name="Map" size={40} className="text-blue-500" />,

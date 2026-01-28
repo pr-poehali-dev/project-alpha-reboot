@@ -32,7 +32,7 @@ export function TestimonialsSection() {
 
   return (
     <section id="testimonials" className="relative w-full py-12 md:py-24 lg:py-32 bg-muted/30 overflow-hidden">
-      <AnimatedBackground variant="waves" color="rgba(220, 38, 38, 0.05)" />
+      <AnimatedBackground variant="waves" color="rgba(40, 108, 255, 0.05)" />
 
       <div className="container px-4 md:px-6">
         <ScrollReveal>
@@ -66,7 +66,7 @@ export function TestimonialsSection() {
                         whileHover={{ scale: 1.1, rotate: 5 }}
                         transition={{ type: "spring", stiffness: 300 }}
                       >
-                        <Avatar className="glassmorphic-avatar border-2 border-transparent group-hover:border-red-500 transition-colors">
+                        <Avatar className="glassmorphic-avatar border-2 border-transparent group-hover:border-[#286CFF] transition-colors">
                           <AvatarImage
                             src={`/placeholder.svg?height=40&width=40&text=${testimonial.avatar}`}
                             alt={testimonial.name}
@@ -75,7 +75,7 @@ export function TestimonialsSection() {
                         </Avatar>
                       </motion.div>
                       <div>
-                        <h3 className="text-lg font-medium tracking-tight group-hover:text-red-500 transition-colors">
+                        <h3 className="text-lg font-medium tracking-tight group-hover:text-[#286CFF] transition-colors">
                           {testimonial.name}
                         </h3>
                         <p className="text-sm text-muted-foreground opacity-70">{testimonial.role}</p>
