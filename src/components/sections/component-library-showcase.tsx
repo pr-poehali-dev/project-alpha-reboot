@@ -10,7 +10,7 @@ import { GradientButton } from "@/components/ui-library/buttons/gradient-button"
 import { PrimaryButton, SecondaryButton, OutlineButton } from "@/components/ui-library/buttons/button-variants"
 import { MagneticButton } from "@/components/ui/magnetic-button"
 import { ScrollAnimation, StaggerContainer, StaggerItem } from "@/components/ui-library/animations/scroll-animations"
-import { Sparkles, Zap, Layers, Palette, ArrowRight, CheckCircle, BookOpen, Lightbulb, Rocket } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 export function ComponentLibraryShowcase() {
   const [activeTab, setActiveTab] = useState("cards")
@@ -22,13 +22,13 @@ export function ComponentLibraryShowcase() {
           <div className="flex flex-col items-center justify-center space-y-6 text-center mb-12">
             <div className="space-y-4">
               <AnimatedText
-                text="Библиотека компонентов"
+                text="Последние обновления игры"
                 variant="heading"
                 className="text-3xl font-heading font-bold tracking-tighter sm:text-5xl gradient-text"
                 animation="slide"
               />
               <AnimatedText
-                text="Исследуйте нашу коллекцию красиво оформленных UI-компонентов"
+                text="Новые режимы, карты и возможности кастомизации уже доступны"
                 variant="paragraph"
                 className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 opacity-70"
                 animation="fade"
@@ -49,9 +49,9 @@ export function ComponentLibraryShowcase() {
                   containerClassName="rounded-full"
                 >
                   <TabsList className="glassmorphic-tabs border-0">
-                    <TabsTrigger value="cards">Карточки</TabsTrigger>
-                    <TabsTrigger value="buttons">Кнопки</TabsTrigger>
-                    <TabsTrigger value="progress">Прогресс</TabsTrigger>
+                    <TabsTrigger value="cards">Геймплей</TabsTrigger>
+                    <TabsTrigger value="buttons">Режимы</TabsTrigger>
+                    <TabsTrigger value="progress">Кастомизация</TabsTrigger>
                   </TabsList>
                 </AnimatedGradientBorder>
               </div>
@@ -59,19 +59,19 @@ export function ComponentLibraryShowcase() {
               {/* Cards Tab */}
               <TabsContent value="cards" className="space-y-12">
                 <div className="space-y-4">
-                  <h3 className="text-2xl font-medium tracking-tight text-center">Карточки с изображениями</h3>
+                  <h3 className="text-2xl font-medium tracking-tight text-center">Новый геймплей</h3>
                   <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-8">
-                    Универсальные карточки с изображениями и текстом для демонстрации контента, продуктов или функций
+                    Обновленная механика боя и новые возможности для победы
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <ScrollAnimation type="slide" direction="up" delay={0.1}>
                       <ImageCard
-                        imageSrc="/placeholder.svg?height=300&width=500&text=Design"
-                        imageAlt="Design System"
-                        title="Дизайн-система"
-                        description="Комплексная дизайн-система с единообразными компонентами и стилями для веб-приложений."
-                        tags={["Дизайн", "UI/UX"]}
+                        imageSrc="https://cdn.poehali.dev/projects/e14c72be-1f04-4116-9166-c4a6faef194f/files/5c3a2300-8ccc-4fb1-9f93-915eb73c8612.jpg"
+                        imageAlt="Intense Combat"
+                        title="Динамичные бои"
+                        description="Новые виды оружия и улучшенная баллистика для реалистичных сражений."
+                        tags={["Оружие", "Экшен"]}
                         variant="default"
                         className="border-glow-red"
                       />
@@ -79,11 +79,11 @@ export function ComponentLibraryShowcase() {
 
                     <ScrollAnimation type="slide" direction="up" delay={0.2}>
                       <ImageCard
-                        imageSrc="/placeholder.svg?height=300&width=500&text=Components"
-                        imageAlt="Component Library"
-                        title="Переиспользуемые компоненты"
-                        description="Разрабатывайте быстрее с нашей библиотекой готовых настраиваемых UI-компонентов."
-                        tags={["React", "TypeScript"]}
+                        imageSrc="https://cdn.poehali.dev/projects/e14c72be-1f04-4116-9166-c4a6faef194f/files/ee2381a8-f899-44e6-a62a-8819cdea743e.jpg"
+                        imageAlt="New Map"
+                        title="Новая карта"
+                        description="Огромная территория с разнообразными локациями для тактических сражений."
+                        tags={["Карта", "Локации"]}
                         variant="hover-zoom"
                         className="border-glow-blue"
                       />
@@ -91,11 +91,11 @@ export function ComponentLibraryShowcase() {
 
                     <ScrollAnimation type="slide" direction="up" delay={0.3}>
                       <ImageCard
-                        imageSrc="/placeholder.svg?height=300&width=500&text=Animation"
-                        imageAlt="Animation Library"
-                        title="Плавные анимации"
-                        description="Оживите интерфейсы коллекцией производительных и доступных анимаций."
-                        tags={["Motion", "Интерактив"]}
+                        imageSrc="https://cdn.poehali.dev/projects/e14c72be-1f04-4116-9166-c4a6faef194f/files/ebc1b773-cc71-4c1f-86b0-c51dd46c6d51.jpg"
+                        imageAlt="Customization"
+                        title="Кастомизация"
+                        description="Тысячи скинов для персонажей и оружия. Создай уникальный стиль."
+                        tags={["Скины", "Стиль"]}
                         variant="hover-reveal"
                         className="border-glow-purple"
                       />
@@ -104,46 +104,46 @@ export function ComponentLibraryShowcase() {
                 </div>
 
                 <div className="space-y-4 pt-8">
-                  <h3 className="text-2xl font-medium tracking-tight text-center">CTA-карточки</h3>
+                  <h3 className="text-2xl font-medium tracking-tight text-center">Игровые режимы</h3>
                   <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-8">
-                    Привлекающие внимание карточки для конверсии посетителей в клиентов
+                    Выбирай режим и стратегию — сражайся в одиночку или командой
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <ScrollAnimation type="slide" direction="up" delay={0.1}>
                       <CtaCard
-                        title="Начните сегодня"
-                        description="Присоединяйтесь к тысячам разработчиков, создающих крутые интерфейсы."
-                        primaryAction={{ text: "Регистрация" }}
+                        title="Одиночный режим"
+                        description="Сражайся против 99 игроков. Докажи, что ты лучший воин."
+                        primaryAction={{ text: "Играть соло" }}
                         secondaryAction={{ text: "Подробнее" }}
                         variant="default"
-                        icon={<Rocket className="h-6 w-6" />}
+                        icon={<Icon name="User" size={24} />}
                         className="border-glow-green"
                       />
                     </ScrollAnimation>
 
                     <ScrollAnimation type="slide" direction="up" delay={0.2}>
                       <CtaCard
-                        title="Премиум-функции"
-                        description="Разблокируйте продвинутые компоненты с премиум-тарифом."
-                        primaryAction={{ text: "Улучшить" }}
+                        title="Командный режим"
+                        description="Объединяйся с друзьями в отряд до 4 человек."
+                        primaryAction={{ text: "Играть в команде" }}
                         variant="gradient"
                         alignment="center"
                         buttonVariant="gradient"
-                        icon={<Sparkles className="h-6 w-6" />}
+                        icon={<Icon name="Users" size={24} />}
                         className="border-glow-yellow"
                       />
                     </ScrollAnimation>
 
                     <ScrollAnimation type="slide" direction="up" delay={0.3}>
                       <CtaCard
-                        title="Нужна помощь?"
-                        description="Наша команда поддержки готова ответить на любые вопросы."
-                        primaryAction={{ text: "Поддержка" }}
+                        title="Ранговые матчи"
+                        description="Прокачивай ранг и попади в топ лучших игроков мира."
+                        primaryAction={{ text: "Рейтинг" }}
                         variant="glass"
                         alignment="right"
                         buttonVariant="magnetic"
-                        icon={<Lightbulb className="h-6 w-6" />}
+                        icon={<Icon name="Trophy" size={24} />}
                         className="border-glow-orange"
                       />
                     </ScrollAnimation>
