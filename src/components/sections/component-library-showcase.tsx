@@ -271,7 +271,7 @@ export function ComponentLibraryShowcase() {
                         status="default"
                         showPercentage
                         variant="default"
-                        icon={<Layers className="h-6 w-6" />}
+                        icon={<Icon name="Layers" size={24} />}
                         className="border-glow-red"
                       />
                     </ScrollAnimation>
@@ -286,7 +286,7 @@ export function ComponentLibraryShowcase() {
                         showFraction
                         variant="gradient"
                         progressColor="bg-gradient-to-r from-red-500 to-red-700"
-                        icon={<CheckCircle className="h-6 w-6" />}
+                        icon={<Icon name="CheckCircle" size={24} />}
                         className="border-glow-blue"
                       />
                     </ScrollAnimation>
@@ -300,7 +300,7 @@ export function ComponentLibraryShowcase() {
                         status="warning"
                         showPercentage
                         variant="outlined"
-                        icon={<Palette className="h-6 w-6" />}
+                        icon={<Icon name="Palette" size={24} />}
                         className="border-glow-purple"
                       />
                     </ScrollAnimation>
@@ -315,7 +315,7 @@ export function ComponentLibraryShowcase() {
                         showFraction
                         variant="glass"
                         progressColor="bg-blue-500"
-                        icon={<BookOpen className="h-6 w-6" />}
+                        icon={<Icon name="BookOpen" size={24} />}
                         className="border-glow-green"
                       />
                     </ScrollAnimation>
@@ -335,7 +335,7 @@ export function ComponentLibraryShowcase() {
                       >
                         <span className="flex items-center">
                           Вся библиотека
-                          <ArrowRight className="ml-2 h-4 w-4" />
+                          <Icon name="ArrowRight" size={16} className="ml-2" />
                         </span>
                       </PrimaryButton>
                     </AnimatedGradientBorder>
