@@ -1,4 +1,4 @@
-import { Code, Layers, Palette, Sparkles, Zap, Shield } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { ScrollReveal } from "@/components/scroll-reveal"
@@ -11,44 +11,44 @@ import { ProgressCard } from "@/components/ui-library/cards/progress-card"
 export function FeaturesSection() {
   const features = [
     {
-      icon: <Layers className="h-10 w-10 text-red-500" />,
-      title: "Модульные компоненты",
-      description: "Собирайте сложные интерфейсы из переиспользуемых компонентов.",
+      icon: <Icon name="Crosshair" size={40} className="text-red-500" />,
+      title: "Арсенал оружия",
+      description: "Более 50 видов оружия от пистолетов до снайперских винтовок. Найди свой стиль боя.",
       progress: 100,
       borderClass: "border-glow-red",
     },
     {
-      icon: <Palette className="h-10 w-10 text-blue-500" />,
-      title: "Гибкие темы",
-      description: "Легко настраивайте цвета, шрифты и стили под ваш бренд.",
-      progress: 90,
+      icon: <Icon name="Map" size={40} className="text-blue-500" />,
+      title: "Огромная карта",
+      description: "Исследуй разнообразные локации: города, леса, горы и пустыни. Каждая игра уникальна.",
+      progress: 95,
       borderClass: "border-glow-blue",
     },
     {
-      icon: <Zap className="h-10 w-10 text-yellow-500" />,
-      title: "Высокая скорость",
-      description: "Легковесные компоненты для быстрой загрузки и работы.",
-      progress: 95,
+      icon: <Icon name="Users" size={40} className="text-yellow-500" />,
+      title: "100 игроков",
+      description: "До 100 игроков в одной битве. Сражайся в одиночку, дуэте или команде до 4 человек.",
+      progress: 100,
       borderClass: "border-glow-yellow",
     },
     {
-      icon: <Code className="h-10 w-10 text-green-500" />,
-      title: "TypeScript из коробки",
-      description: "Полная типизация для лучшего DX и меньше багов.",
-      progress: 100,
+      icon: <Icon name="Zap" size={40} className="text-green-500" />,
+      title: "Динамичный геймплей",
+      description: "Быстрые передвижения, скольжение, прыжки и строительство. Максимальная свобода действий.",
+      progress: 90,
       borderClass: "border-glow-green",
     },
     {
-      icon: <Sparkles className="h-10 w-10 text-purple-500" />,
-      title: "Анимации",
-      description: "Красивые анимации и переходы на базе Framer Motion.",
+      icon: <Icon name="Trophy" size={40} className="text-purple-500" />,
+      title: "Рейтинговая система",
+      description: "Прокачивай ранги, зарабатывай награды и стань легендой в таблице лидеров.",
       progress: 85,
       borderClass: "border-glow-purple",
     },
     {
-      icon: <Shield className="h-10 w-10 text-orange-500" />,
-      title: "Доступность",
-      description: "Компоненты соответствуют стандартам WCAG для всех пользователей.",
+      icon: <Icon name="Sparkles" size={40} className="text-orange-500" />,
+      title: "Кастомизация",
+      description: "Тысячи скинов для персонажей и оружия. Создай уникальный образ бойца.",
       progress: 92,
       borderClass: "border-glow-orange",
     },
@@ -63,13 +63,13 @@ export function FeaturesSection() {
           <div className="flex flex-col items-center justify-center space-y-6 text-center mb-12">
             <div className="space-y-4">
               <AnimatedText
-                text="Возможности для современной веб-разработки"
+                text="Что делает нас лучшими"
                 variant="heading"
                 className="text-3xl font-heading font-bold tracking-tighter sm:text-5xl gradient-text"
                 animation="slide"
               />
               <AnimatedText
-                text="Наша библиотека содержит все необходимое для создания красивых, интерактивных и доступных веб-приложений."
+                text="Мы создали игру, где каждый матч — это уникальное приключение, где выживает сильнейший. Без лагов, без читеров — только чистое мастерство."
                 variant="paragraph"
                 className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400 opacity-70"
                 animation="fade"
