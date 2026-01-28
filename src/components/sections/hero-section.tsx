@@ -31,7 +31,7 @@ const itemVariants = {
 export function HeroSection() {
   return (
     <section id="home" className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 overflow-hidden">
-      <AnimatedBackground variant="gradient" color="rgba(220, 38, 38, 0.08)" secondaryColor="rgba(75, 85, 99, 0.08)" />
+      <AnimatedBackground variant="gradient" color="rgba(40, 108, 255, 0.08)" secondaryColor="rgba(75, 85, 99, 0.08)" />
 
       <div className="container px-6 md:px-8">
         <div className="grid gap-8 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
@@ -59,8 +59,8 @@ export function HeroSection() {
                 <GradientButton
                   glowAmount={5}
                   className="px-6 py-2.5 text-base"
-                  gradientFrom="from-red-500"
-                  gradientTo="to-red-700"
+                  gradientFrom="from-[#286CFF]"
+                  gradientTo="to-[#1a4acc]"
                   asChild
                 >
                   <a href="#features" className="flex items-center">
@@ -93,7 +93,7 @@ export function HeroSection() {
 
           <ScrollReveal delay={0.3}>
             <SpotlightCard className="relative h-[450px] w-full overflow-hidden rounded-xl border glassmorphic-card p-1 border-glow-red">
-              <div className="absolute inset-0 bg-gradient-to-br from-red-900/30 via-transparent to-gray-900/30 z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#0f2f80]/30 via-transparent to-gray-900/30 z-10"></div>
               <motion.img
                 src="https://cdn.poehali.dev/projects/e14c72be-1f04-4116-9166-c4a6faef194f/bucket/e386a805-c77d-4b58-86e1-98bc0a3f13bb.png"
                 alt="Battle Royale Gameplay"

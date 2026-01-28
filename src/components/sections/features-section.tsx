@@ -11,7 +11,7 @@ import { ProgressCard } from "@/components/ui-library/cards/progress-card"
 export function FeaturesSection() {
   const features = [
     {
-      icon: <Icon name="Crosshair" size={40} className="text-red-500" />,
+      icon: <Icon name="Crosshair" size={40} className="text-[#286CFF]" />,
       title: "Арсенал оружия",
       description: "Более 50 видов оружия от пистолетов до снайперских винтовок. Найди свой стиль боя.",
       progress: 100,
@@ -56,7 +56,7 @@ export function FeaturesSection() {
 
   return (
     <section id="features" className="relative w-full py-12 md:py-24 lg:py-32 bg-muted/30 overflow-hidden">
-      <AnimatedBackground variant="dots" color="rgba(220, 38, 38, 0.05)" />
+      <AnimatedBackground variant="dots" color="rgba(40, 108, 255, 0.05)" />
 
       <div className="container px-6 md:px-8">
         <ScrollReveal>
@@ -93,7 +93,7 @@ export function FeaturesSection() {
                       </div>
                       <CardTitle className="mt-4 tracking-tight relative">
                         {feature.title}
-                        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
+                        <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#286CFF] transition-all duration-300 group-hover:w-full"></span>
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
@@ -108,7 +108,7 @@ export function FeaturesSection() {
                         status={feature.progress === 100 ? "success" : "default"}
                         showPercentage
                         variant="minimal"
-                        progressColor={feature.progress === 100 ? "bg-green-500" : "bg-red-500"}
+                        progressColor={feature.progress === 100 ? "bg-green-500" : "bg-[#286CFF]"}
                       />
                     </CardContent>
                   </Card>
