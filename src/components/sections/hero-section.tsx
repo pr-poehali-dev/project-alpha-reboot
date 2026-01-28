@@ -93,37 +93,27 @@ export function HeroSection() {
 
           <ScrollReveal delay={0.3}>
             <SpotlightCard className="relative h-[450px] w-full overflow-hidden rounded-xl border glassmorphic-card p-1 border-glow-red">
-              <div className="absolute inset-0 bg-gradient-to-br from-red-900/20 via-transparent to-gray-900/20 z-10"></div>
-              <div className="relative z-20 h-full w-full rounded-xl bg-gradient-to-br from-red-950/50 to-gray-950/50 p-6 flex items-center justify-center">
-                <div className="grid grid-cols-2 gap-6 w-full max-w-md">
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.6 }}
-                    className="col-span-2 h-24 rounded-xl bg-red-800/20 border border-red-800/30 flex items-center justify-center glassmorphic-inner-card"
-                    whileHover={{ scale: 1.03, boxShadow: "0 0 15px rgba(220, 38, 38, 0.3)" }}
-                  >
-                    <span className="font-heading text-xl text-white tracking-tight">100 игроков</span>
-                  </motion.div>
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.8 }}
-                    className="h-32 rounded-xl bg-gray-800/20 border border-gray-800/30 flex items-center justify-center glassmorphic-inner-card"
-                    whileHover={{ scale: 1.03, boxShadow: "0 0 15px rgba(75, 85, 99, 0.3)" }}
-                  >
-                    <span className="font-heading text-white tracking-tight">Оружие</span>
-                  </motion.div>
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 1.0 }}
-                    className="h-32 rounded-xl bg-red-900/20 border border-red-900/30 flex items-center justify-center glassmorphic-inner-card"
-                    whileHover={{ scale: 1.03, boxShadow: "0 0 15px rgba(220, 38, 38, 0.3)" }}
-                  >
-                    <span className="font-heading text-white tracking-tight">Победа</span>
-                  </motion.div>
-                </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-red-900/30 via-transparent to-gray-900/30 z-10"></div>
+              <motion.img
+                src="https://cdn.poehali.dev/projects/e14c72be-1f04-4116-9166-c4a6faef194f/bucket/e386a805-c77d-4b58-86e1-98bc0a3f13bb.png"
+                alt="Battle Royale Gameplay"
+                className="absolute inset-0 w-full h-full object-cover rounded-xl"
+                initial={{ opacity: 0, scale: 1.1 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-20"></div>
+              <div className="relative z-30 h-full w-full flex items-end justify-center p-6">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.8 }}
+                  className="text-center"
+                >
+                  <span className="font-heading text-2xl text-white font-bold tracking-tight drop-shadow-lg">
+                    100 игроков. Одна битва. Один победитель.
+                  </span>
+                </motion.div>
               </div>
             </SpotlightCard>
           </ScrollReveal>
