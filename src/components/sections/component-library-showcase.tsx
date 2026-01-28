@@ -169,13 +169,13 @@ export function ComponentLibraryShowcase() {
                               <PrimaryButton>Основная</PrimaryButton>
                             </StaggerItem>
                             <StaggerItem>
-                              <PrimaryButton leftIcon={<Zap className="h-4 w-4" />}>С иконкой</PrimaryButton>
+                              <PrimaryButton leftIcon={<Icon name="Zap" size={16} />}>С иконкой</PrimaryButton>
                             </StaggerItem>
                             <StaggerItem>
                               <SecondaryButton>Вторичная</SecondaryButton>
                             </StaggerItem>
                             <StaggerItem>
-                              <SecondaryButton rightIcon={<ArrowRight className="h-4 w-4" />}>
+                              <SecondaryButton rightIcon={<Icon name="ArrowRight" size={16} />}>
                                 Подробнее
                               </SecondaryButton>
                             </StaggerItem>
@@ -193,7 +193,7 @@ export function ComponentLibraryShowcase() {
                               <OutlineButton>Контурная</OutlineButton>
                             </StaggerItem>
                             <StaggerItem>
-                              <OutlineButton leftIcon={<BookOpen className="h-4 w-4" />}>Документация</OutlineButton>
+                              <OutlineButton leftIcon={<Icon name="BookOpen" size={16} />}>Документация</OutlineButton>
                             </StaggerItem>
                             <StaggerItem>
                               <GradientButton>Градиент</GradientButton>
